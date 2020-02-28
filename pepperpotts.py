@@ -9,9 +9,9 @@ init()
 print(Fore.YELLOW+"===========Package: PepperPotts is imported================="+Fore.RESET)
 
 #Sqlconnector for DbConnection
-con_zinka  = mysql.connector.connect(user='public',  password='zinka@321', host='172.18.8.91', database='zlog')
-con_zinka  = mysql.connector.connect(user='py.user', password='py@1234',   host='172.18.8.91', database='services')
-con_presto = presto.connect(host='54.254.250.251', port=8080)
+con_zinka  = mysql.connector.connect(user='user_name',  password='XXXXXX', host='IP Address', database='zlog')
+con_zinka  = mysql.connector.connect(user='user_name', password='XXXX',   host='IP Address', database='services')
+con_presto = presto.connect(host='XX.XXX.XXX.XXX', port=8080)
 
 #Queries for data maipulation
 qry_trucksonplatformS	= "SELECT DISTINCT truck_no FROM divum.blackbuck.fleetApp_truck WHERE is_verified = 1"
